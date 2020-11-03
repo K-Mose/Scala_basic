@@ -1,0 +1,13 @@
+[debug] > Exec(core/run, None, None)
+[error] Expected ID character
+[error] Not a valid command: core
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: core (similar: compile, fork, forcegc)
+[error] core/run
+[error]     ^
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
