@@ -30,4 +30,28 @@ println()
     println(num)
   // yield : vector 타입의 인스턴스로 리턴함.
   println(fives(30))
+
+  def checkSum(num:Int , sum:Int) = {
+    for(
+      start <- 0 until num;
+      inner <- start until num if start + inner == sum
+    ) yield (start, inner) // vector 값으로 반환
+  }
+  println(checkSum(20,32))
+  checkSum(20, 32) foreach{
+    case(i,j) =>
+    print(s"($i, $j)")
+  } // IndexedSeq 를 반환하기 때문에 foreach 사용하여 처리 가능
+
+  var i = 0;
+  do{
+    print(i + " ")
+    i += 1
+  }while(i < 3)
+  println()
+  i = 0
+  while(i<3){
+    print(i + " ")
+    i+=1
+  }
 }
